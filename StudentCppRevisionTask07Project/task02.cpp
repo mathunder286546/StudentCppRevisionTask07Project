@@ -22,5 +22,23 @@
  */
 
 string task02(int a, int b, int c) {	
-	return "a b c";
+	if (a < 0 || b < 0 || c < 0) {
+		return "a b c wrong";
+	}
+
+	if (a < b) {
+		int t = b;
+		a = t;
+	}
+	else {
+		if (b < c) {
+			int t = c;
+			b = t;
+		}
+		else {
+			int t = b;
+			a = t;
+		}
+	}
+	return 
 }
